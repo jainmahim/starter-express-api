@@ -333,7 +333,9 @@ app.post("/lend", async function (req, res) {
         res.send("Error")
       });
 });
-
+app.get("/", function(req,res){
+  res.send("I am Live :)");
+  })
 app.post("/borrow", async function (req, res) {
   console.log(req.body);
 
